@@ -1,0 +1,33 @@
+body {
+  background-color: #EFFFFD;
+}
+
+#heading {
+  color:#42C2FF;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#main_section {
+  background-color: white;
+  width: 50vw;
+  margin-left: 25vw;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 2px;
+}
+
+input {
+  margin: 2px;
+  width: 48%;
+}
+
+.full_width {
+  width: 98%;
+}
+
+.no_width {
+  width: auto;
+}

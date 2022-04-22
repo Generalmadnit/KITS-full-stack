@@ -71,3 +71,58 @@ It can include things like
 Further Reading
 -> https://colorhunt.co
 -> https://www.lambdatest.com/blog/how-to-use-css-breakpoints-for-responsive-design/
+
+
+---
+# Apr-22
+
+Q. What is CSS?
+-> Cascading Style Sheet is used to style the webpages and websites. (Look and feel).
+
+Ref -> https://developer.mozilla.org/en-US/docs/Web/CSS
+
+Task in hand for today:
+-> Building a College Admission Form using HTML and CSS.
+
+-> Name
+-> Phone Number
+-> Email
+-> Date of Birth
+-> Address
+-> Parents Name (Father and Mother)
+-> Class 10th Marks and Class 12th Marks
+-> School Name (12th)
+-> Gender
+-> Guardian Name
+-> Guardian Phone Number
+-> Interests
+
+
+
+
+Feedback (Idea)
+
+Live Server
+-> It will AUTO refresh the browser.
+-> Makes development easy.
+
+- Comments
+-> These are part of the code which the computer will not execute but they are helpful for human understanding.
+
+- placeholder
+-> Used as a helper text to tell which input we are expecting.
+
+- CSS Selector?
+-> Like a set of rules. Any element which matches this rule, will get the style applied. (Selects the element, based on some certain conditions).
+
+Tag Type Selector -> Select based on the tag.
+Class Selector -> Select by the class.
+
+Assignment:
+-> Change the stye a bit more
+-> Font
+-> Size
+-> Background Color / image
+-> Pseudo properties -> Hover, animation.
+
+Custom Font -> https://fonts.google.com/
