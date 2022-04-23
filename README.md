@@ -126,3 +126,90 @@ Assignment:
 -> Pseudo properties -> Hover, animation.
 
 Custom Font -> https://fonts.google.com/
+
+
+
+# Apr 23
+
+-> Intro to JS
+-> Variables
+-> Data types
+-> Functions
+-> Object and Arrays
+-> promises and fetch.
+-> Intro to react.
+
+
+Download -> Node JS -> https://nodejs.org/en/download/
+
+
+Q. What is Javascript?
+-> Java NOT EQUAL TO Javascript.
+-> It is a programming language used to add functionality to any website or webpage.
+
+Output in JS
+-> console.log("Hello World!");
+
+Q. What are variables?
+-> Variables are containers to store some data. This data can change in the future as well.
+
+Q. What is the container where I can assign once and never update?
+-> constant -> It does not change.
+
+How to do these in JS.
+-> let <variable_name> = <value>
+-> const <constant_name> = <value>
+
+
+const college_name = "KITS";
+console.log("Hello");
+console.log(college_name);
+
+Datatypes in JS
+-> number
+-> strings
+-> boolean
+-> arrays and objects
+
+Further Reading -> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+
+Q. Taking an input.
+prompt("Hint")
+
+Q. functions in JS
+
+function <function_name> (<parameters>) {
+  //The set of instructions
+}
+
+//Better
+const <function_name> = (<parameter>) => {
+ return <value>
+}
+
+
+Q. What is the difference between an argument and a parameter?
+
+-> parameters are given in the function definition. Argument is in the function invocation. (When we call the function, we pass the arguments.)
+-> When we write a function definition, we take the parameters.
+
+
+Creating a simple react application
+
+> npx create-react-app hello-react
+
+After installation is done.
+
+> cd hello-react (cd <project-name>)
+> npm start
+
+> localhost:3000
+
+React is maintained by Facebook.
+React has a good community.
+React is lightweight (Not much code by default). (easy to get started).
+React is popular.
+
+
+Assignment
+-> Migrate your form which we made yesterday from HTML to the React App.
