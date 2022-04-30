@@ -213,3 +213,41 @@ React is popular.
 
 Assignment
 -> Migrate your form which we made yesterday from HTML to the React App.
+
+# Apr-30-2022
+
+1. More Concepts of React.
+
+Components:
+Its a collection of HTML elements with some JS.
+It is reusable.
+
+Functional Components.
+
+//Shortcut for component -> rafce.
+//Boilerplate for all the component:
+
+import React from 'react'
+
+const Homepage = () => {
+  return (
+    <div>Homepage</div>
+  )
+}
+
+export default Homepage
+
+Extension for React Shortcut - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+JSX -> JavaScript + XML (In react, we use JavaScript + HTML)
+
+Task -> Create an application to get the list of users from reqres and show in the frontend.
+
+React Hooks -> They give additional functionality to the React Applications. They let you manage states and props easily.
+
+Assignment:
+Chage the li and use table.
+Currently, we are showing a LIST of all the users.
+Task is to change it and show th TABLE with the following information.
+
+index, Profile Picture, First name, Last Name, Email
