@@ -5,7 +5,7 @@ const List = () => {
 
   useEffect(() => {
     const fn = async() => {
-      const result = await fetch("https://reqres.in/api/users?page=2");
+      const result = await fetch("http://localhost:8080/user_list");
       const user_list = await result.json();
       setUserList(user_list.data);
       console.log(user_list.data);

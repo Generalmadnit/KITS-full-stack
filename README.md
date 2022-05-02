@@ -251,3 +251,41 @@ Currently, we are showing a LIST of all the users.
 Task is to change it and show th TABLE with the following information.
 
 index, Profile Picture, First name, Last Name, Email
+
+
+# May-02, 2022
+
+Backend (NodeJS and how to write APIs).
+
+NodeJS - An environment where we can run JS code without the need of a browser.
+
+express - This is used to send the data from the backend. This data can be fetched by the fetch function in the frontend.
+
+nodemon - Backend Equivalent to the Live Server for frontend.
+
+NPM - Node Package Manager -> Used to manage the additionally installed packages.
+
+To get started with backend,
+1. `npm init`
+2. `npm install express`
+3. `npm install --save-dev`
+
+To use nodemon, go to package.json file and inside scripts, write:
+"dev": "nodemon ./index.js",
+
+To start the server, use command `npm run dev`
+
+Q. What is API?
+-> Application Programming Interface -> It is a way (interface) using which two pieces of software can communicate with each other.
+
+Query Parameter -> ?key=value&another_key=anothervalue
+// ?num1=10&num2=30;
+
+
+HTTP Request Methods:
+1. Difference between GET and POST and where to use what?
+-> When you want to get some data from the server/backend. GET.
+-> When you want to SEND some data from the browser to the server/backend. POST.
+
+Install CORS -> CORS allow to tell which frontend can access your backend API.
+-> `npm install cors`
