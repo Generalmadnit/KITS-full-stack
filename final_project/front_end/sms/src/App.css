@@ -1,0 +1,46 @@
+body {
+  background-color: #E5E5E5;
+}
+
+.navigation_bar {
+  background-color: #FFFFFF;
+  padding: 1rem;
+}
+
+.navigation_bar > h3 {
+  margin: 0px;
+  color: #14213D;
+}
+
+.main_title {
+  text-align: center;
+  color: #FCA311;
+}
+
+.main_container {
+  background-color: #FFFFFF;
+  width: 50vw;
+  margin-left: 25vw;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 2px;
+}
+
+input {
+  margin: 2px;
+  width: 48%;
+}
+
+.full_width {
+  width: 98%;
+}
+
+.no_width {
+  width: auto;
+}
+
+.margin_2 {
+  margin: 2px;
+}

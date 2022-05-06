@@ -268,7 +268,7 @@ NPM - Node Package Manager -> Used to manage the additionally installed packages
 To get started with backend,
 1. `npm init`
 2. `npm install express`
-3. `npm install --save-dev`
+3. `npm install nodemon --save-dev`
 
 To use nodemon, go to package.json file and inside scripts, write:
 "dev": "nodemon ./index.js",
@@ -289,3 +289,53 @@ HTTP Request Methods:
 
 Install CORS -> CORS allow to tell which frontend can access your backend API.
 -> `npm install cors`
+
+CORS -> Cross Origin Resource Sharing.
+frontend -> localhost:3000
+backend  -> localhost:8080
+
+# May-04
+-> Create the Project with boilerplate code.
+-> CORS.
+-> Wireframing -> The process of designing the website's frontend. Sketch / Drawing of how the website should look like.
+-> Start with the Frotend app.
+
+
+# May-05
+-> Introduce Database, what is Database? What does it do? Why is it needed? Different Database Management Systems.
+
+-> Database -> A DB is a collection of organized data. The purpose is to store and retrieve that data easily. Manage that data easily.
+-> Why do we need a DB? To store some data which can be later retrieved. To organize, structure and give any relation between the various pieces of information.
+DBMS -> Database Management System. 
+It is a piece of software which is used simply manage any database. Manage includes a lot of things, read and write (Create Read Update Delete, CRUD), validation, data typing, security (Authorization), backup, etc.
+
+-> What are various DB Management Systems available?
+-> MySQL, Postgres, SQLite, Oracle DB, MongoDB, Firestore, MicrosoftSQLServer
+
+
+-> A (piece of) Software === Set of Programs
+-> ACID / BASE in DBMS.
+
+-> Introduce MongoDB.
+-> It is one of the DB Management System. It is used as a NoSQL, it feels like a JSON database.
+BSON - Read more if interested.
+
+MongoDB benefits:
+-> It is in JSON, that means lesser conversion.
+-> It is dynamic, Non Structured.
+-> Powerful query processing.
+-> Easy to scale. (Cost efficient)
+
+Q. Is MongoDB ACID Compliant?
+
+-> Setup and installation. (Local as well as cloud).
+
+
+-> Basic operation on Mongo DB. (Connecting the Admission form).
+-> Connecting Admission Form, involving Backend and Frontend changes as well.
+-> Make the functionality to show the list of all students.
+
+Username: kits_username
+Password: kits_password
+
+mongoose

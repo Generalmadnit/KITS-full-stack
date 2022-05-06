@@ -7,8 +7,8 @@ const List = () => {
     const fn = async() => {
       const result = await fetch("http://localhost:8080/user_list");
       const user_list = await result.json();
-      setUserList(user_list.data);
-      console.log(user_list.data);
+      setUserList(user_list);
+      console.log(user_list);
     };
 
     fn();
