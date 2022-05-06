@@ -3,9 +3,6 @@ import React from 'react'
 const AdmissionForm = () => {
   return (
     <>
-      <div className="navigation_bar">
-        <h3>SMS</h3>
-      </div>
       <h1 className="main_title">Admission Form</h1>
       <div className="main_container">
         <form action='http://localhost:8080/admission' method='POST'>
@@ -48,7 +45,7 @@ const AdmissionForm = () => {
           <input type="checkbox" name="interest" class="no_width" />Basketball
           <br />
           <br />
-          <input type="submit" value="Apply" class="full_width" />
+          <input type="submit" value="Apply" class="full_width button" />
         </form>
       </div>
     </>

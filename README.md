@@ -339,3 +339,9 @@ Username: kits_username
 Password: kits_password
 
 mongoose
+
+
+# May-06, 2022
+-> React Router, basic setup and working of react router.
+-> npm install react-router-dom@6
+-> CSS -> display: block (Take the whole available width) and display: inline (Take only the width of the content inside).
