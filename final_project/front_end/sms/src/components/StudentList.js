@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const StudentList = () => {
+
+  const [students, setStudents] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/students")
+    .then((res) => {
+      return res.json();
+    }).then((data) => {
+      // console.log(data);
+      setStudents(data);
+    });
+  })
+
   return (
     <>
       <h1 className='main_title'>All Students</h1>
@@ -15,30 +28,19 @@ const StudentList = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>01</td>
-            <td>Aayush Sinha</td>
-            <td>test@test.com</td>
-            <td>
-              <Link to="/student">More Info</Link>
-            </td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Raju</td>
-            <td>test@test.com</td>
-            <td>
-              <Link to="/student">More Info</Link>
-            </td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Sanjay</td>
-            <td>test@test.com</td>
-            <td>
-              <Link to="/student">More Info</Link>
-            </td>
-          </tr>
+          {students.map((single_student, index) => {
+            return(
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{single_student.firstName} {single_student.lastName}</td>
+                  <td>{single_student.email}</td>
+                  <td>
+                    <Link to="/student">More Info</Link>
+                  </td>
+                </tr>
+            );
+          })}
+          
         </tbody>
       </table>
     </>

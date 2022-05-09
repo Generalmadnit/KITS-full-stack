@@ -5,6 +5,7 @@ import AdmissionForm from './components/AdmissionForm';
 import StudentList from './components/StudentList';
 import NavigationBar from './components/NavigationBar';
 import StudentDetail from './components/StudentDetail';
+import AdmissionSuccessful from './components/AdmissionSuccessful';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<StudentList />} />
+        <Route path='admission/success' element={<AdmissionSuccessful />} />
         <Route path="admission" element={<AdmissionForm />} />
         <Route path="student" element={<StudentDetail />} />
       </Routes>

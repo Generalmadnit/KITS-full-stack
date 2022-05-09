@@ -109,3 +109,7 @@ button:active, .button:active {
   color: #14213D;
   border: 1px solid #14213D;
 }
+
+.text_center {
+  text-align: center;
+}

@@ -345,3 +345,10 @@ mongoose
 -> React Router, basic setup and working of react router.
 -> npm install react-router-dom@6
 -> CSS -> display: block (Take the whole available width) and display: inline (Take only the width of the content inside).
+
+
+# May-09, 2022
+-> Make basic Create and Read operations on MongoDB.
+-> Connect the Application Form so when I submit the data, it should reflect on the DB.
+-> Connect the Student List so it should show all the submissions from the databse.
+-> Showing more information about the student on the student detail page.

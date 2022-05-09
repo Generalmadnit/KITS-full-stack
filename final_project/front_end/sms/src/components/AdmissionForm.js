@@ -6,46 +6,67 @@ const AdmissionForm = () => {
       <h1 className="main_title">Admission Form</h1>
       <div className="main_container">
         <form action='http://localhost:8080/admission' method='POST'>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="First Name" name='first_name' />
+          <input type="text" placeholder="Last Name" name='last_name'/>
+          
           <br />
-          <input type="number" placeholder="Phone Number" />
-          <input type="email" placeholder="Email" />
+          
+          <input type="number" placeholder="Phone Number" name='phone_number' />
+          <input type="email" placeholder="Email" name='email' />
+          
           <br />
-          <input type="date" class="full_width" placeholder="Date of Birth" />
+          
+          <input type="date" className="full_width" placeholder="Date of Birth" name='date_of_birth' />
+          
           <br />
           <br />
+          
           <p className='margin_2'>Gender:</p>
-          <input type="radio" name="gender" class="no_width" />Male
-          <input type="radio" name="gender" class="no_width" />Female
-          <input type="radio" name="gender" class="no_width" />Other
+          <input type="radio" name="gender" className="no_width" value="male" /> Male
+          <input type="radio" name="gender" className="no_width" value="female" /> Female
+          <input type="radio" name="gender" className="no_width" value="other" /> Other
+          
           <br />
           <br />
-          <textarea placeholder="Address" class="full_width"></textarea>
+          
+          <textarea placeholder="Address" className="full_width" name='address'></textarea>
+          
           <br />
           <br />
-          <input type="text" placeholder="Father Name" />
-          <input type="text" placeholder="Mother Name" />
+          
+          <input type="text" placeholder="Father Name" name='father_name'/>
+          <input type="text" placeholder="Mother Name" name='mother_name'/>
+          
           <br/>
-          <input type="text" placeholder="Guardian Name" />
-          <input type="number" placeholder="Guardin Phone Number" />
+          
+          <input type="text" placeholder="Guardian Name" name='guardian_name' />
+          <input type="number" placeholder="Guardin Phone Number" name='guardian_phone_number' />
+          
           <br />
           <br />
-          <input type="number" placeholder="Class X Marks" />
-          <input type="number" placeholder="Class XII Marks" />
+          
+          <input type="number" placeholder="Class X Marks" name='class_x_mark' />
+          <input type="number" placeholder="Class XII Marks" name='class_xii_mark'/>
+          
           <br/>
-          <input type="text" placeholder="School Name (Class XII)" class="full_width" />
+          
+          <input type="text" placeholder="School Name (Class XII)" className="full_width" name='class_xii_school' />
+          
           <br />
           <br />
+          
           <p className='margin_2'>Hobbies and Interests:</p>
-          <input type="checkbox" name="interest" class="no_width" />Cricket
-          <input type="checkbox" name="interest" class="no_width" />Football
-          <input type="checkbox" name="interest" class="no_width" />Swimming
-          <input type="checkbox" name="interest" class="no_width" />Gaming
-          <input type="checkbox" name="interest" class="no_width" />Basketball
+          <input type="checkbox" name="interests" className="no_width" value="cricket" /> Cricket
+          <input type="checkbox" name="interests" className="no_width" value="football" /> Football
+          <input type="checkbox" name="interests" className="no_width" value="swimming" /> Swimming
+          <input type="checkbox" name="interests" className="no_width" value="gaming" /> Gaming
+          <input type="checkbox" name="interests" className="no_width" value="basketball" /> Basketball
+          
           <br />
           <br />
-          <input type="submit" value="Apply" class="full_width button" />
+          
+          <input type="reset" className="button"/>
+          <input type="submit" value="Apply" className="button" />
         </form>
       </div>
     </>
