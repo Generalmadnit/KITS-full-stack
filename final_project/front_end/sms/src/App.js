@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<StudentList />} />
         <Route path='admission/success' element={<AdmissionSuccessful />} />
         <Route path="admission" element={<AdmissionForm />} />
-        <Route path="student" element={<StudentDetail />} />
+        <Route path="student/:student_id" element={<StudentDetail />} />
       </Routes>
     </>
   );

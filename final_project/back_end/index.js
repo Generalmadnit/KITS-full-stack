@@ -66,7 +66,9 @@ app.get('/students', (req, res) => {
 
 app.get('/single_student', (req, res) => {
   const student_id = req.query.id;
-  //TODO: Send the information (Detailed) of a single student.
+  student.findById(student_id).then((data) =>{
+    res.json(data);
+  });
 });
 
 app.post('/single_student', (req, res) => {

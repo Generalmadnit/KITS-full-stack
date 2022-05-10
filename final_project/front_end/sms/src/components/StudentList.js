@@ -35,7 +35,7 @@ const StudentList = () => {
                   <td>{single_student.firstName} {single_student.lastName}</td>
                   <td>{single_student.email}</td>
                   <td>
-                    <Link to="/student">More Info</Link>
+                    <Link to={"/student/" + single_student._id}>More Info</Link>
                   </td>
                 </tr>
             );

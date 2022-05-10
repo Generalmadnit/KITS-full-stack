@@ -352,3 +352,11 @@ mongoose
 -> Connect the Application Form so when I submit the data, it should reflect on the DB.
 -> Connect the Student List so it should show all the submissions from the databse.
 -> Showing more information about the student on the student detail page.
+
+# May-10, 2022
+-> Work on the Detail Screen.
+--> Show the detailed data of a single student
+--> Allow updation of that student data.
+-> Work on Responsiveness of the Frontend.
+-> Start deployment on the internet (Hosting of our project).
+-> Hosting on Netlify (https://www.netlify.com/)

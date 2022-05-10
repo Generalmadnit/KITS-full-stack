@@ -113,3 +113,11 @@ button:active, .button:active {
 .text_center {
   text-align: center;
 }
+
+.shortWidth {
+  width: 30vw;
+}
+
+.no_width {
+  width: initial;
+}
