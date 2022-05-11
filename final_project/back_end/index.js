@@ -73,35 +73,54 @@ app.get('/single_student', (req, res) => {
 
 app.post('/single_student', (req, res) => {
   const student_id = req.query.id;
+  student.findByIdAndUpdate(student_id, {
+    firstName: req.body.first_name,
+    lastName: req.body.last_name,
+    phoneNumber: req.body.phone_number,
+    email: req.body.email,
+    dateOfBirth: req.body.date_of_birth,
+    gender: req.body.gender,
+    address: req.body.address,
+    fatherName: req.body.father_name,
+    motherName: req.body.mother_name,
+    guardianName: req.body.guardian_name,
+    guardianPhoneNumber: req.body.guardian_phone_number,
+    classXMark: req.body.class_x_mark,
+    classXIIMark: req.body.class_xii_mark,
+    classXIISchool: req.body.class_xii_school,
+    interests: req.body.interests,
+  }).then(() => {
+    res.location('http://localhost:3000/student/' + student_id);
+    res.send(302);
+  });
+  // console.log(req.body);
   //TODO: Update the Databse.
 });
 
 app.post('/admission', (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
 
   // if(req.body.class_xii_mark < 75) {
   //   res.send("Marks too low, cannot admit");
   // }
 
-  const newStudent = new student(
-    {
-      firstName: req.body.first_name,
-      lastName: req.body.last_name,
-      phoneNumber: req.body.phone_number,
-      email: req.body.email,
-      dateOfBirth: req.body.date_of_birth,
-      gender: req.body.gender,
-      address: req.body.address,
-      fatherName: req.body.father_name,
-      motherName: req.body.mother_name,
-      guardianName: req.body.guardian_name,
-      guardianPhoneNumber: req.body.guardian_phone_number,
-      classXMark: req.body.class_x_mark,
-      classXIIMark: req.body.class_xii_mark,
-      classXIISchool: req.body.class_xii_school,
-      interests: req.body.interests,
-    }
-  );
+  const newStudent = new student({
+    firstName: req.body.first_name,
+    lastName: req.body.last_name,
+    phoneNumber: req.body.phone_number,
+    email: req.body.email,
+    dateOfBirth: req.body.date_of_birth,
+    gender: req.body.gender,
+    address: req.body.address,
+    fatherName: req.body.father_name,
+    motherName: req.body.mother_name,
+    guardianName: req.body.guardian_name,
+    guardianPhoneNumber: req.body.guardian_phone_number,
+    classXMark: req.body.class_x_mark,
+    classXIIMark: req.body.class_xii_mark,
+    classXIISchool: req.body.class_xii_school,
+    interests: req.body.interests,
+  });
   newStudent.save();
   
   res.location('http://localhost:3000/admission/success');

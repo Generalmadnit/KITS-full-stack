@@ -360,3 +360,7 @@ mongoose
 -> Work on Responsiveness of the Frontend.
 -> Start deployment on the internet (Hosting of our project).
 -> Hosting on Netlify (https://www.netlify.com/)
+
+# May-11, 2022
+-> Finish the development.
+-> Host the Project!
