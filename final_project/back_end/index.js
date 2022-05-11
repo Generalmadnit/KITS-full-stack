@@ -44,7 +44,7 @@ const studentSchema = new mongoose.Schema({
 
 const student = mongoose.model('students', studentSchema);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("Server started...");
 });
 
